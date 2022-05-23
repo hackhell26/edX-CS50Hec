@@ -1,6 +1,5 @@
-from sys import argv
+from sys import argv #argv it is a list
 
-if len(argv) == 2:
-    print(f"hello {argv[1]}")
-else:
-    print("hello world")
+for arg in argv: # for loop to print out all the CLI arguments that i type in
+    if arg != "argv.py":
+        print(arg)
