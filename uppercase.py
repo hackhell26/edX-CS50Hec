@@ -1,8 +1,6 @@
 from cs50 import get_string
 
 before = get_string("Before: ")
-print("After: ", end="")
-
-for c in before:    # for c in the string in question
-    print (c.upper(), end="")   # c = especific character
-print()
+after = before.upper()      # calling upper() to whole string, not one character at a time
+print (f"After: {after}")   # not need it the (end="") because i'm printing the whole
+# thing out once, not character by character, and the print() line ether
